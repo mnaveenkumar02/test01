@@ -1,0 +1,54 @@
+site_name: My site
+site_url: http://example.com/
+theme:
+  name: material
+  theme:
+  palette: 
+
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.share
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - navigation.expand
+ 
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - toc:
+      title: On this page
+
+
+
+nav:
+ - Home: index.md
+ - About: 
+    -About Me: about/about.md
+    -Childhood: about/childhood.md
+    -my 2nd post: about/my 2nd post.md 
+ 
